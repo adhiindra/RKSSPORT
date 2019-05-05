@@ -7,58 +7,80 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
+        android:background="@color/grey"
         android:layout_height="match_parent"
         tools:context="com.example.rkssport.MainActivity">
 
-        <TextView
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardquotes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/quotes"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="-22dp"
-            android:fontFamily="@font/montserrat_subrayada"
-            android:text="#Qoutes" />
+            android:layout_marginTop="10dp">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/quotes"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/quotes"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="-22dp"
+                android:textColor="@color/dark"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_subrayada"
+                android:text="#Qoutes" />
 
-            android:layout_above="@+id/id_gallery"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="110dp">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/quotes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
 
-        </android.support.v7.widget.RecyclerView>
+                android:layout_above="@+id/id_gallery"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="35dp">
 
-        <TextView
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardbody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/body"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="21dp"
-            android:fontFamily="@font/montserrat_subrayada"
-            android:text="#Body Building" />
-        <android.support.v7.widget.RecyclerView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/quotes"
-            android:id="@+id/body"
-            >
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/cardquotes">
 
-        </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:id="@+id/bodyb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/cardbody"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/dark"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_subrayada"
+                android:text="#Cutting Body" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_below="@id/bodyb">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v7.widget.CardView>
 
         //awalnya
         <android.support.v7.widget.CardView
-            android:layout_below="@+id/body"
+            android:layout_below="@+id/cardbody"
             android:id="@+id/card_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:layout_marginRight="8dp"
-            android:layout_marginBottom="130dp"
+            android:layout_marginBottom="-50dp"
+            app:cardElevation="10dp"
             app:cardCornerRadius="50dp">
 
 
@@ -79,25 +101,30 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="174dp"
                     android:layout_height="wrap_content"
-
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="164dp"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginEnd="153dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="101dp"
+
+                    android:layout_marginRight="100dp"
                     android:layout_marginBottom="31dp"
-                    android:fontFamily="@font/montserrat_subrayada_bold"
-                    android:text="WORKOUT" />
+                    android:fontFamily="@font/montserrat_subrayada"
+                    android:text="BODY BUILDING"
+                    android:textColor="@color/dark"
+                    android:textSize="20sp" />
 
                 <android.support.v7.widget.CardView
                     android:layout_width="370dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="80dp"
                     android:layout_marginLeft="15dp"
                     app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp"
                     android:id="@+id/card">
 
                     <TextView
@@ -109,6 +136,7 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginTop="22dp"
                         android:layout_marginBottom="48dp"
+                        android:textColor="@color/dark"
                         android:fontFamily="@font/montserrat_subrayada"
                         android:text="#Beginer" />
 
@@ -129,12 +157,14 @@
                     android:layout_below="@+id/card"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="59dp"
+                    app:cardElevation="10dp"
                     app:cardCornerRadius="4dp">
 
                     <TextView
                         android:id="@+id/advance"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
+                        android:textColor="@color/dark"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_marginStart="26dp"
@@ -160,12 +190,14 @@
                     android:layout_below="@+id/card1"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="59dp"
+                    app:cardElevation="10dp"
                     app:cardCornerRadius="4dp">
 
                     <TextView
                         android:id="@+id/expert"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
+                        android:textColor="@color/dark"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_marginStart="26dp"
@@ -185,5 +217,6 @@
 
             </RelativeLayout>
         </android.support.v7.widget.CardView>
+
     </RelativeLayout>
 </ScrollView>

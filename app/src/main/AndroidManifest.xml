@@ -26,7 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SportDetail" />
+        <activity android:name=".SportDetail"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity2"
+            android:parentActivityName=".MainActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"

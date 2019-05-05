@@ -2,6 +2,7 @@ package com.example.rkssport;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,8 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -54,6 +58,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 mContext.startActivity(intent);
             }
         });
+
+
+        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "onClick: clicked on: " );
+
+                Intent intent = new Intent(mContext, MainActivity2.class);
+                intent.putStringArrayListExtra("image_url", mImageUrl);
+                intent.putStringArrayListExtra("link1", link);
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -72,6 +89,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             super(itemView);
             sport = itemView.findViewById(R.id.sport);
             parentLayout = itemView.findViewById(R.id.parent_layout);
+
+
         }
     }
 }

@@ -1,10 +1,15 @@
 package com.example.rkssport;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -49,8 +54,56 @@ public class MainActivity extends AppCompatActivity {
         initRecyclerView2();
         initRecyclerViewQuotes();
         initRecyclerViewBody();
+        click();
 
 
+    }
+
+    void click(){
+        CardView card_view = (CardView) findViewById(R.id.card);
+        CardView card_view1 = (CardView) findViewById(R.id.card1);
+        CardView card_view2 = (CardView) findViewById(R.id.card2);
+        CardView card_viewb = (CardView) findViewById(R.id.cardbody);
+
+        card_viewb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putStringArrayListExtra("image_url", mBody);
+                intent.putStringArrayListExtra("link1", lBody);
+                startActivity(intent);
+            }
+        });
+
+        card_view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putStringArrayListExtra("image_url", mImageUrl);
+                intent.putStringArrayListExtra("link1", link1);
+                startActivity(intent);
+            }
+        });
+
+        card_view1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putStringArrayListExtra("image_url", mImageUrl1);
+                intent.putStringArrayListExtra("link1", link2);
+                startActivity(intent);
+            }
+        });
+
+        card_view2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putStringArrayListExtra("image_url", mImageUrl2);
+                intent.putStringArrayListExtra("link1", link3);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initRecyclerViewQuotes(){
