@@ -7,31 +7,25 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RatingBar;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-import de.hdodenhof.circleimageview.CircleImageView;
-
-public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.ViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
     private static final String TAG = "RecyclerViewAdapter";
 
     private ArrayList<String> mImageUrl= new ArrayList<>();
-    private ArrayList<String> mDataUtama =  new ArrayList<>();
+    private ArrayList<String> link =  new ArrayList<>();
 
     private Context mContext;
 
-    public RecycleViewAdapter(Context context, ArrayList<String> mImageUrl, ArrayList<String> mData1) {
+    public RecyclerViewAdapter(Context context, ArrayList<String> mImageUrl, ArrayList<String> mData1) {
         this.mImageUrl = mImageUrl;
         mContext = context;
-        this.mDataUtama = mData1;
+        this.link = mData1;
     }
 
     @Override
@@ -55,8 +49,8 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
             public void onClick(View view) {
                 Log.d(TAG, "onClick: clicked on: " );
 
-                Intent intent = new Intent(mContext, MainActivity2.class);
-                intent.putStringArrayListExtra("image_url", mDataUtama);
+                Intent intent = new Intent(mContext, SportDetail.class);
+                intent.putExtra("link1", link.get(position));
                 mContext.startActivity(intent);
             }
         });

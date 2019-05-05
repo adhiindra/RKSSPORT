@@ -2,54 +2,70 @@ package com.example.rkssport;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.RatingBar;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.Button;
 
-import com.bumptech.glide.Glide;
+import com.google.android.youtube.player.YouTubeBaseActivity;
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayerView;
 
-public class SportDetail extends AppCompatActivity {
+public class SportDetail extends YouTubeBaseActivity {
+
+    YouTubePlayerView mYoutubePlayerView;
+    Button btnPlay;
+    YouTubePlayer.OnInitializedListener mOnInitializedListener;
+
+    String link;
+
 
     private static final String TAG = "HotelDetail";
-    public String boking;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        Log.d(TAG, "onCreate: started.");
-
         getIncomingIntent();
+        Log.d(TAG, "onCreate: started.");
+        btnPlay = (Button) findViewById(R.id.btn);
+        mYoutubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube);
+
+
+        mOnInitializedListener = new YouTubePlayer.OnInitializedListener() {
+            @Override
+            public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
+
+                youTubePlayer.loadVideo(link);
+            }
+
+            @Override
+            public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
+
+            }
+        };
+
+        btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mYoutubePlayerView.initialize(YoutubeConfig.getApiKey(),mOnInitializedListener);
+            }
+        });
+
+
     }
 
     private void getIncomingIntent(){
         Log.d(TAG, "getIncomingIntent: checking for incoming intents.");
 
-        if(getIntent().hasExtra("image_url") ){
+        if(getIntent().hasExtra("link1") ){
             Log.d(TAG, "getIncomingIntent: found intent extras.");
 
-            String imageUrl = getIntent().getStringExtra("image_url");
-
-            setImage(imageUrl);
+            this.link = getIntent().getStringExtra("link1");
 
         }
     }
 
-
-    private void setImage(String imageUrl){
-        Log.d(TAG, "setImage: setting te image and name to widgets.");
-
-
-        ImageView image = findViewById(R.id.image);
-        Glide.with(this)
-                .asBitmap()
-                .load(imageUrl)
-                .into(image);
-    }
 
 
 }

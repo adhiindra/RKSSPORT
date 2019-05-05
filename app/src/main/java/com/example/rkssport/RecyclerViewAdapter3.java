@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -15,33 +16,36 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-public class RecycleViewAdapter2 extends RecyclerView.Adapter<RecycleViewAdapter2.ViewHolder> {
+public class RecyclerViewAdapter3 extends RecyclerView.Adapter<RecyclerViewAdapter3.ViewHolder> {
+
     private static final String TAG = "RecyclerViewAdapter";
 
-    private ArrayList<String> mImageUrl1= new ArrayList<>();
+    private ArrayList<String> mImageUrl2= new ArrayList<>();
+    private ArrayList<String> link3 = new ArrayList<>();
 
     private Context mContext;
 
-    public RecycleViewAdapter2(Context context, ArrayList<String> mImageUrl1) {
-        this.mImageUrl1 = mImageUrl1;
+    public RecyclerViewAdapter3(Context context, ArrayList<String> mImageUrl1, ArrayList<String>link3) {
+        this.mImageUrl2 = mImageUrl1;
         mContext = context;
+       this.link3 = link3;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RecyclerViewAdapter3.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_horizontal, parent, false);
-        RecycleViewAdapter2.ViewHolder holder = new RecycleViewAdapter2.ViewHolder(view);
+        RecyclerViewAdapter3.ViewHolder holder = new RecyclerViewAdapter3.ViewHolder(view);
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull RecyclerViewAdapter3.ViewHolder holder, final int position) {
         Log.d(TAG, "onBindViewHolder: called.");
 
         Glide.with(mContext)
                 .asBitmap()
-                .load(mImageUrl1.get(position))
+                .load(mImageUrl2.get(position))
                 .into(holder.sport);
 
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +54,7 @@ public class RecycleViewAdapter2 extends RecyclerView.Adapter<RecycleViewAdapter
                 Log.d(TAG, "onClick: clicked on: " );
 
                 Intent intent = new Intent(mContext, SportDetail.class);
-                intent.putExtra("image_url", mImageUrl1.get(position));
+                intent.putExtra("link1", link3.get(position));
                 mContext.startActivity(intent);
             }
         });
@@ -60,7 +64,7 @@ public class RecycleViewAdapter2 extends RecyclerView.Adapter<RecycleViewAdapter
 
     @Override
     public int getItemCount() {
-        return mImageUrl1.size();
+        return mImageUrl2.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

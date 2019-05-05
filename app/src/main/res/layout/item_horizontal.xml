@@ -17,8 +17,9 @@
         >
 
         <ImageView
-            android:layout_width="400dp"
-            android:layout_height="142dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:id="@+id/sport"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitCenter"
