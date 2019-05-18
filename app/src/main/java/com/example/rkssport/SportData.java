@@ -4,6 +4,59 @@ import java.util.ArrayList;
 
 public class SportData {
 
+    //Judul Body
+    ArrayList <String> jBodym = new ArrayList<>();
+
+    //Judul Beginer
+    ArrayList <String> jBeginerm = new ArrayList<>();
+
+    //Judul Advance
+    ArrayList <String> jAdvancem = new ArrayList<>();
+
+    //Judul Expert
+    ArrayList <String> jExpertm = new ArrayList<>();
+
+    //Data Body Pria
+    ArrayList <String> bMonth1m = new ArrayList<>();
+    ArrayList <String> bMonth2m = new ArrayList<>();
+    ArrayList <String> bMonth3m = new ArrayList<>();
+
+    //Data Body Wanita
+    ArrayList <String> bMonth1w = new ArrayList<>();
+    ArrayList <String> bMonth2w = new ArrayList<>();
+    ArrayList <String> bMonth3w = new ArrayList<>();
+
+    //Data Beginer Pria
+    ArrayList <String> bgMonth1m = new ArrayList<>();
+    ArrayList <String> bgMonth2m = new ArrayList<>();
+    ArrayList <String> bgMonth3m = new ArrayList<>();
+
+    //Data Beginer Wanita
+    ArrayList <String> bgMonth1w = new ArrayList<>();
+    ArrayList <String> bgMonth2w = new ArrayList<>();
+    ArrayList <String> bgMonth3w = new ArrayList<>();
+
+    //Data Advanced Pria
+    ArrayList <String> aMonth1m = new ArrayList<>();
+    ArrayList <String> aMonth2m = new ArrayList<>();
+    ArrayList <String> aMonth3m = new ArrayList<>();
+
+    //Data Advanced Pria
+    ArrayList <String> aMonth1w = new ArrayList<>();
+    ArrayList <String> aMonth2w = new ArrayList<>();
+    ArrayList <String> aMonth3w = new ArrayList<>();
+
+    //Data Expert Pria
+    ArrayList <String> xMonth1m = new ArrayList<>();
+    ArrayList <String> xMonth2m = new ArrayList<>();
+    ArrayList <String> xMonth3m = new ArrayList<>();
+
+    //Data Expert Wanita
+    ArrayList <String> xMonth1w = new ArrayList<>();
+    ArrayList <String> xMonth2w = new ArrayList<>();
+    ArrayList <String> xMonth3w = new ArrayList<>();
+
+
     //URL FOTO
     ArrayList <String> mQuotes = new ArrayList<>(); //Quotes
     ArrayList <String> mBody = new ArrayList<>(); //Body
@@ -21,8 +74,127 @@ public class SportData {
         return link1;
     }
 
+
+    public ArrayList<String> getjBodym() {
+        return jBodym;
+    }
+
+
+    public ArrayList<String> getjBeginerm() {
+        return jBeginerm;
+    }
+
+
+
+    public ArrayList<String> getjAdvancem() {
+        return jAdvancem;
+    }
+
+
+
+    public ArrayList<String> getjExpertm() {
+        return jExpertm;
+    }
+
+
     public ArrayList<String> getlBody() {
         return lBody;
+    }
+
+    public ArrayList<String> getbMonth1m() {
+        return bMonth1m;
+    }
+
+    public ArrayList<String> getbMonth2m() {
+        return bMonth2m;
+    }
+
+    public ArrayList<String> getbMonth3m() {
+        return bMonth3m;
+    }
+
+    public ArrayList<String> getbMonth1w() {
+        return bMonth1w;
+    }
+
+    public ArrayList<String> getbMonth2w() {
+        return bMonth2w;
+    }
+
+    public ArrayList<String> getbMonth3w() {
+        return bMonth3w;
+    }
+
+    public ArrayList<String> getBgMonth1m() {
+        return bgMonth1m;
+    }
+
+    public ArrayList<String> getBgMonth2m() {
+        return bgMonth2m;
+    }
+
+    public ArrayList<String> getBgMonth3m() {
+        return bgMonth3m;
+    }
+
+    public ArrayList<String> getBgMonth1w() {
+        return bgMonth1w;
+    }
+
+    public ArrayList<String> getBgMonth2w() {
+        return bgMonth2w;
+    }
+
+    public ArrayList<String> getBgMonth3w() {
+        return bgMonth3w;
+    }
+
+    public ArrayList<String> getaMonth1m() {
+        return aMonth1m;
+    }
+
+    public ArrayList<String> getaMonth2m() {
+        return aMonth2m;
+    }
+
+    public ArrayList<String> getaMonth3m() {
+        return aMonth3m;
+    }
+
+    public ArrayList<String> getaMonth1w() {
+        return aMonth1w;
+    }
+
+    public ArrayList<String> getaMonth2w() {
+        return aMonth2w;
+    }
+
+    public ArrayList<String> getaMonth3w() {
+        return aMonth3w;
+    }
+
+    public ArrayList<String> getxMonth1m() {
+        return xMonth1m;
+    }
+
+    public ArrayList<String> getxMonth2m() {
+        return xMonth2m;
+    }
+
+    public ArrayList<String> getxMonth3m() {
+        return xMonth3m;
+    }
+
+    public ArrayList<String> getxMonth1w() {
+        return xMonth1w;
+    }
+
+    public ArrayList<String> getxMonth2w() {
+        return xMonth2w;
+    }
+
+    public ArrayList<String> getxMonth3w() {
+        return xMonth3w;
     }
 
     public ArrayList<String> getmBody() {
@@ -55,15 +227,520 @@ public class SportData {
 
 
     void setData(){
-        //Url Body
-        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AADFZ2RXmHbxs-bNbnwetv5la/BERSEPEDA.jpg?raw=1");
-        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AAATwqHcl3k4l6BvQSQGD2i3a/incworm.jpg?raw=1");
-        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AADgUf4MpmL2FvcNI3oO6VS7a/jumping%20lunges.jpg?raw=1");
-        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AAA2GfIvJ30xPQ88koEn9Eiha/Lompat%20tali.jpg?raw=1");
-        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AABEyp-oq5MSsq9RKqnNu5XOa/naik%20turun%20tangga.jpg?raw=1");
-        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AADwC_JJ1FLHNHRaCkGEAwaja/plank.jpg?raw=1");
-        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AACjJOnBv2TS_OlA4JgBHi05a/RUNNING.jpg?raw=1");
-        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AABA4Ua9kg1GLu5oTwlVUa3Ca/skaters.jpg?raw=1");
+
+        //Judul
+        //Judul Body
+        jBodym.add("Body");
+        jBodym.add("");
+        jBodym.add("");
+        jBodym.add("");
+        jBodym.add("");
+        jBodym.add("");
+        jBodym.add("");
+        jBodym.add("");
+
+        //Judul Beginer
+        jBeginerm.add("Beginer");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+        jBeginerm.add("");
+
+        //Judul Advanced
+        jAdvancem.add("Advanced");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+        jAdvancem.add("");
+
+        //Judul Expert
+        jExpertm.add("Expert");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+        jExpertm.add("");
+
+
+
+        //Body
+        //Data Body Pria Month1 //Sesuain sama list yang ada pas masukin Datanya
+        bMonth1m.add("Body");
+        bMonth1m.add("");
+        bMonth1m.add("");
+        bMonth1m.add("");
+        bMonth1m.add("");
+        bMonth1m.add("");
+        bMonth1m.add("");
+        bMonth1m.add("");
+
+        //Data Body Pria Month2 //Sesuain sama list yang ada pas masukin Datanya
+        bMonth2m.add("BodyBody");
+        bMonth2m.add("");
+        bMonth2m.add("");
+        bMonth2m.add("");
+        bMonth2m.add("");
+        bMonth2m.add("");
+        bMonth2m.add("");
+        bMonth2m.add("");
+
+        //Data Body Pria Month3 //Sesuain sama list yang ada pas masukin Datanya
+        bMonth3m.add("BodyBodyBody");
+        bMonth3m.add("");
+        bMonth3m.add("");
+        bMonth3m.add("");
+        bMonth3m.add("");
+        bMonth3m.add("");
+        bMonth3m.add("");
+        bMonth3m.add("");
+
+        //Data Body Wanita Month1 //Sesuain sama list yang ada pas masukin Datanya
+        bMonth1w.add("Bodyw");
+        bMonth1w.add("");
+        bMonth1w.add("");
+        bMonth1w.add("");
+        bMonth1w.add("");
+        bMonth1w.add("");
+        bMonth1w.add("");
+        bMonth1w.add("");
+
+        //Data Body Wanita Month2 //Sesuain sama list yang ada pas masukin Datanya
+        bMonth2w.add("BodyBodyw");
+        bMonth2w.add("");
+        bMonth2w.add("");
+        bMonth2w.add("");
+        bMonth2w.add("");
+        bMonth2w.add("");
+        bMonth2w.add("");
+        bMonth2w.add("");
+
+        //Data Body Wanita Month3 //Sesuain sama list yang ada pas masukin Datanya
+        bMonth3w.add("BodyBodyBodywBodyBodyBodywBodyBodyBodywBodyBodyBodyw");
+        bMonth3w.add("");
+        bMonth3w.add("");
+        bMonth3w.add("");
+        bMonth3w.add("");
+        bMonth3w.add("");
+        bMonth3w.add("");
+        bMonth3w.add("");
+
+        //Beginer
+        //Data Beginer Pria Month1 //Sesuain sama list yang ada pas masukin Datanya
+        bgMonth1m.add("Test");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+        bgMonth1m.add("");
+
+        //Data Beginer Pria Month2 //Sesuain sama list yang ada pas masukin Datanya
+        bgMonth2m.add("Test");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+        bgMonth2m.add("");
+
+        //Data Beginer Pria Month3 //Sesuain sama list yang ada pas masukin Datanya
+        bgMonth3m.add("Test");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+        bgMonth3m.add("");
+
+
+        //Data Beginer Wanita Month1 //Sesuain sama list yang ada pas masukin Datanya
+        bgMonth1w.add("Test");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+        bgMonth1w.add("");
+
+        //Data Beginer Wanita Month2 //Sesuain sama list yang ada pas masukin Datanya
+        bgMonth2w.add("Test");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+        bgMonth2w.add("");
+
+        //Data Beginer Wanita Month3 //Sesuain sama list yang ada pas masukin Datanya
+        bgMonth3w.add("Test");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+        bgMonth3w.add("");
+
+
+        //Advanced
+        //Data Advance Pria month1 //Sesuain sama list yang ada pas masukin Datanya
+        aMonth1m.add("Test");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+        aMonth1m.add("");
+
+        //Data Advance Pria month2 //Sesuain sama list yang ada pas masukin Datanya
+        aMonth2m.add("Test");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+        aMonth2m.add("");
+
+        //Data Advance Pria month3 //Sesuain sama list yang ada pas masukin Datanya
+        aMonth3m.add("Test");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+        aMonth3m.add("");
+
+        //Data Advance Wanita month1 //Sesuain sama list yang ada pas masukin Datanya
+        aMonth1w.add("Test1");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+        aMonth1w.add("");
+
+        //Data Advance Wanita month2 //Sesuain sama list yang ada pas masukin Datanya
+        aMonth2w.add("Test1Test1");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+        aMonth2w.add("");
+
+        //Data Advance Wanita month3 //Sesuain sama list yang ada pas masukin Datanya
+        aMonth3w.add("Test1Test1Test1");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+        aMonth3w.add("");
+
+        //Expert
+        //Data Expert Pria month1 //Sesuain sama list yang ada pas masukin Datanya
+        xMonth1m.add("Test");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+        xMonth1m.add("");
+
+        //Data Expert Pria month2 //Sesuain sama list yang ada pas masukin Datanya
+        xMonth2m.add("Test");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+        xMonth2m.add("");
+
+        //Data Expert Pria month3 //Sesuain sama list yang ada pas masukin Datanya
+        xMonth3m.add("Test");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+        xMonth3m.add("");
+
+        //Data Expert Wanita month1 //Sesuain sama list yang ada pas masukin Datanya
+        xMonth1w.add("Test");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+        xMonth1w.add("");
+
+        //Data Expert Wanita month2 //Sesuain sama list yang ada pas masukin Datanya
+        xMonth2w.add("Test");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+        xMonth2w.add("");
+
+        //Data Expert Wanita month3 //Sesuain sama list yang ada pas masukin Datanya
+        xMonth3w.add("Test");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+        xMonth3w.add("");
+
 
         //Link Youtube Body
         lBody.add("54GhsiBY-aw");
@@ -138,6 +815,17 @@ public class SportData {
         link3.add("riAutegDqdI");
         link3.add("rr6eFNNDQdU");
 
+        //Image UrL
+        //Url Body
+        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AADFZ2RXmHbxs-bNbnwetv5la/BERSEPEDA.jpg?raw=1");
+        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AAATwqHcl3k4l6BvQSQGD2i3a/incworm.jpg?raw=1");
+        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AADgUf4MpmL2FvcNI3oO6VS7a/jumping%20lunges.jpg?raw=1");
+        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AAA2GfIvJ30xPQ88koEn9Eiha/Lompat%20tali.jpg?raw=1");
+        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AABEyp-oq5MSsq9RKqnNu5XOa/naik%20turun%20tangga.jpg?raw=1");
+        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AADwC_JJ1FLHNHRaCkGEAwaja/plank.jpg?raw=1");
+        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AACjJOnBv2TS_OlA4JgBHi05a/RUNNING.jpg?raw=1");
+        mBody.add("https://www.dropbox.com/sh/wrfl8vnj0cfwy49/AABA4Ua9kg1GLu5oTwlVUa3Ca/skaters.jpg?raw=1");
+
         //Url Quotes
         mQuotes.add("https://pixfeeds.com/images/quotes/famous-sports-quotes/1280-1200-586929934-sports-quote-on-fitness.jpg");
         mQuotes.add("https://previews.123rf.com/images/ambassador806/ambassador8061608/ambassador806160800007/62133811-banner-cita-de-motivaci%C3%B3n-entrenamiento-deportivo-la-motivaci%C3%B3n-del-cartel-impresi%C3%B3n-inspirada-de-negocios-pa.jpg");
@@ -211,4 +899,6 @@ public class SportData {
 
 
     }
+
+
 }

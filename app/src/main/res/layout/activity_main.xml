@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="wrap_content"
+
+
+<RelativeLayout android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="@drawable/bgnn"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:background="@color/grey"
         android:layout_height="match_parent"
         tools:context="com.example.rkssport.MainActivity">
 
@@ -98,6 +105,7 @@
                 android:layout_height="800dp"
                 android:layout_alignStart="@+id/card_view"
                 android:layout_gravity="center_vertical"
+                android:gravity="fill"
                 android:orientation="horizontal">
 
                 <TextView
@@ -219,4 +227,5 @@
         </android.support.v7.widget.CardView>
 
     </RelativeLayout>
-</ScrollView>
+    </ScrollView>
+</RelativeLayout>

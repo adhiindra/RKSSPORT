@@ -17,11 +17,27 @@ import java.util.ArrayList;
 
 public class RecyclerViewGrid extends RecyclerView.Adapter<RecyclerViewGrid.ViewHolder> {
 
+    private ArrayList<String> judul = new ArrayList<>();
+    private ArrayList<String> Month1m = new ArrayList<>();
+    private ArrayList<String> Month2m = new ArrayList<>();
+    private ArrayList<String> Month3m = new ArrayList<>();
+    private ArrayList<String> Month1w = new ArrayList<>();
+    private ArrayList<String> Month2w = new ArrayList<>();
+    private ArrayList<String> Month3w = new ArrayList<>();
     ArrayList <String> mImageUrl = new ArrayList<>();
     ArrayList <String> link = new ArrayList<>();
     private Context mContext;
 
-    public RecyclerViewGrid(Context context, ArrayList<String> mImageUrl, ArrayList<String> mData1) {
+    public RecyclerViewGrid(Context context,ArrayList<String> judul,ArrayList<String> month1m, ArrayList<String> month2m, ArrayList<String> month3m,
+                            ArrayList<String> month1w, ArrayList <String> month2w, ArrayList<String> month3w, ArrayList<String> mImageUrl,
+                            ArrayList<String> mData1) {
+        this.judul = judul;
+        this.Month1m = month1m;
+        this.Month2m = month2m;
+        this.Month3m = month3m;
+        this.Month1w = month1w;
+        this.Month2w = month2w;
+        this.Month3w = month3w;
         this.mImageUrl = mImageUrl;
         mContext = context;
         this.link = mData1;
@@ -49,6 +65,13 @@ public class RecyclerViewGrid extends RecyclerView.Adapter<RecyclerViewGrid.View
             public void onClick(View view) {
 
                 Intent intent = new Intent(mContext, SportDetail.class);
+                intent.putExtra("judul", judul.get(position));
+                intent.putExtra("Month1m", Month1m.get(position));
+                intent.putExtra("Month2m", Month2m.get(position));
+                intent.putExtra("Month3m", Month3m.get(position));
+                intent.putExtra("Month1w", Month1w.get(position));
+                intent.putExtra("Month2w", Month2w.get(position));
+                intent.putExtra("Month3w", Month3w.get(position));
                 intent.putExtra("link1", link.get(position));
                 mContext.startActivity(intent);
             }
