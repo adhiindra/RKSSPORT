@@ -480,7 +480,6 @@ public class SportData {
         aMonth1m.add("Lakukanlah Olahraga Staggered push-up 10 kali dengan 3 kali set");
         aMonth1m.add("Lakukanlah Olahraga V-up 10 kali dengan 3 kali set ");
         aMonth1m.add("Lakukanlah Olahraga Wide Arm Push Up 10 kali dengan 3 kali set");
-        aMonth1m.add("Lakukanlah Olahraga");
 
         //Data Advance Pria month2 //Sesuain sama list yang ada pas masukin Datanya
         aMonth2m.add("TLakukanlah Olahraga Bicycle crunches 30 kali dengan 3 kali set");
@@ -499,7 +498,6 @@ public class SportData {
         aMonth2m.add("Lakukanlah Olahraga Staggered push-up 30 kali dengan 3 kali set");
         aMonth2m.add("Lakukanlah Olahraga V-up 30 kali dengan 3 kali set");
         aMonth2m.add("Lakukanlah Olahraga Wide Arm Push Up 30 kali dengan 3 kali set");
-        aMonth2m.add("Lakukanlah Olahraga");
 
         //Data Advance Pria month3 //Sesuain sama list yang ada pas masukin Datanya
         aMonth3m.add("Lakukanlah Olahraga Bicycle crunches 40 kali dengan 3 kali set");
@@ -518,11 +516,11 @@ public class SportData {
         aMonth3m.add("Lakukanlah Olahraga Staggered push-up 40 kali dengan 3 kali set");
         aMonth3m.add("Lakukanlah Olahraga V-up 40 kali dengan 3 kali set");
         aMonth3m.add("Lakukanlah Olahraga Wide Arm Push Up 40 kali dengan 3 kali set");
-        aMonth3m.add("Lakukanlah Olahraga");
+
 
         //Data Advance Wanita month1 //Sesuain sama list yang ada pas masukin Datanya
         aMonth1w.add("Lakukanlah Olahraga Bicycle crunches 5 kali dengan 3 kali set");
-        aMonth1m.add("Lakukanlah Olahraga cobra Stretch 1 ment");
+        aMonth1w.add("Lakukanlah Olahraga cobra Stretch 1 ment");
         aMonth1w.add("Lakukanlah Olahraga Crossover crunch 5 kali dengan 3 kali set");
         aMonth1w.add("Lakukanlah Olahraga Decline push up 5 kali dengan 3 kali set");
         aMonth1w.add("Lakukanlah Olahraga Flooe tricep dips 5 kali dengan 3 kali set");
@@ -537,11 +535,11 @@ public class SportData {
         aMonth1w.add("Lakukanlah Olahraga Staggered push-up 5 kali dengan 3 kali set");
         aMonth1w.add("Lakukanlah Olahraga V-up 5 kali dengan 3 kali set");
         aMonth1w.add("Lakukanlah Olahraga Wide Arm Push Up 5 kali dengan 3 kali set");
-        aMonth1w.add("Lakukanlah Olahraga");
+
 
         //Data Advance Wanita month2 //Sesuain sama list yang ada pas masukin Datanya
         aMonth2w.add("Lakukanlah Olahraga Bicycle crunches 10 kali dengan 3 kali set");
-        aMonth1m.add("Lakukanlah Olahraga cobra Stretch 1 menit");
+        aMonth2w.add("Lakukanlah Olahraga cobra Stretch 1 menit");
         aMonth2w.add("Lakukanlah Olahraga Crossover crunch 10 kali dengan 3 kali set");
         aMonth2w.add("Lakukanlah Olahraga Decline push up 10 kali dengan 3 kali set");
         aMonth2w.add("Lakukanlah Olahraga Flooe tricep dips 10 kali dengan 3 kali set");
@@ -552,14 +550,15 @@ public class SportData {
         aMonth2w.add("Lakukanlah Olahraga Push up and Rotation 10 kali dengan 3 kali set");
         aMonth2w.add("Lakukanlah Olahraga Push Up 10 kali dengan 3 kali set");
         aMonth2w.add("Lakukanlah Olahraga Spine lumbar twist stretch left 10 kali dengan 3 kali set");
+        aMonth2w.add("Lakukanlah Olahraga Spine lumbar twist stretch right 10 kali dengan 3 kali set");
         aMonth2w.add("Lakukanlah Olahraga Staggered push-up 10 kali dengan 3 kali set");
         aMonth2w.add("Lakukanlah Olahraga V-up 10 kali dengan 3 kali set");
         aMonth2w.add("Lakukanlah Olahraga Wide Arm Push Up 10 kali dengan 3 kali set");
-        aMonth2w.add("Lakukanlah Olahraga");
+
 
         //Data Advance Wanita month3 //Sesuain sama list yang ada pas masukin Datanya
         aMonth3w.add("Lakukanlah Olahraga Bicycle crunches 15 kali dengan 3 kali set");
-        aMonth1m.add("Lakukanlah Olahraga cobra Stretch 1 menit");
+        aMonth3w.add("Lakukanlah Olahraga cobra Stretch 1 menit");
         aMonth3w.add("Lakukanlah Olahraga Crossover crunch 15 kali dengan 3 kali set");
         aMonth3w.add("Lakukanlah Olahraga Decline push up 15 kali dengan 3 kali set");
         aMonth3w.add("Lakukanlah Olahraga Flooe tricep dips 15 kali dengan 3 kali set");
@@ -723,6 +722,8 @@ public class SportData {
         xMonth3w.add("Lakukanlah Olahraga Burpess 15 kali dengan 4 kali Set");
         xMonth3w.add("Lakukanlah Olahraga Butt bridge 15 kali dengan 4 kali Set");
         xMonth3w.add("Lakukanlah Olahraga Chest stretch 1 menit ");
+        xMonth3w.add("Lakukanlah Olahraga Cobra stretch 1 menit");
+        xMonth3w.add("Lakukanlah Olahraga Crossover crunch 15 kali dengan 4 kali Set");
         xMonth3w.add("Lakukanlah Olahraga Decline push up 15 kali dengan 4 kali Set");
         xMonth3w.add("Lakukanlah Olahraga Diamond push up 15 kali dengan 4 kali Set");
         xMonth3w.add("Lakukanlah Olahraga Floor Tricep Dips 15 kali dengan 4 kali Set");
