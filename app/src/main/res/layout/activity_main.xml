@@ -91,14 +91,6 @@
             app:cardCornerRadius="50dp">
 
 
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center_vertical"
-                android:scrollbars="none" >
-            </HorizontalScrollView>
-
             <RelativeLayout
                 android:id="@+id/id_gallery"
                 android:layout_width="match_parent"
@@ -127,13 +119,17 @@
                     android:textSize="20sp" />
 
                 <android.support.v7.widget.CardView
+                    android:id="@+id/card"
                     android:layout_width="370dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
                     android:layout_marginLeft="15dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="10dp"
                     app:cardCornerRadius="4dp"
-                    app:cardElevation="10dp"
-                    android:id="@+id/card">
+                    app:cardElevation="10dp">
 
                     <TextView
                         android:id="@+id/beginer"
@@ -144,42 +140,47 @@
                         android:layout_marginStart="26dp"
                         android:layout_marginTop="22dp"
                         android:layout_marginBottom="48dp"
-                        android:textColor="@color/dark"
                         android:fontFamily="@font/montserrat_subrayada"
-                        android:text="#Beginer" />
+                        android:text="#Beginer"
+                        android:textColor="@color/dark" />
 
                     <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerview"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="60dp"
-                        android:id="@+id/recyclerview">
+                        android:layout_marginTop="60dp">
 
                     </android.support.v7.widget.RecyclerView>
                 </android.support.v7.widget.CardView>
 
                 //advance
+
                 <android.support.v7.widget.CardView
                     android:id="@+id/card1"
                     android:layout_width="370dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/card"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="59dp"
-                    app:cardElevation="10dp"
-                    app:cardCornerRadius="4dp">
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp">
 
                     <TextView
                         android:id="@+id/advance"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
-                        android:textColor="@color/dark"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_marginStart="26dp"
                         android:layout_marginTop="22dp"
                         android:layout_marginBottom="48dp"
                         android:fontFamily="@font/montserrat_subrayada"
-                        android:text="#Advance" />
+                        android:text="#Advance"
+                        android:textColor="@color/dark" />
 
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/recyclerview1"
@@ -191,28 +192,33 @@
                 </android.support.v7.widget.CardView>
 
                 //expert
+
                 <android.support.v7.widget.CardView
                     android:id="@+id/card2"
                     android:layout_width="370dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/card1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="59dp"
-                    app:cardElevation="10dp"
-                    app:cardCornerRadius="4dp">
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp">
 
                     <TextView
                         android:id="@+id/expert"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
-                        android:textColor="@color/dark"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_marginStart="26dp"
                         android:layout_marginTop="22dp"
                         android:layout_marginBottom="48dp"
                         android:fontFamily="@font/montserrat_subrayada"
-                        android:text="#Expert" />
+                        android:text="#Expert"
+                        android:textColor="@color/dark" />
 
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/recyclerview2"
